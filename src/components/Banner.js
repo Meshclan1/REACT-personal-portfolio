@@ -50,14 +50,16 @@ const Banner = () => {
             <span className="tagline"> Welcome to my Portfolio</span>
             <h1>
               {`👋 Hey there, I'm Ayo a `}
-              <span className="wrap">{text}</span>
-              <h3>Welcome to my profile</h3>
+              <span className="wrap" id="fse">
+                Full-Stack Engineer
+              </span>
+              <h3></h3>
               <p>
-                I'm a skilled self-taught engineer with a strong focus on
-                JavaScript and a love for creating exceptional web applications.
-                My journey into the world of software development has been
-                fueled by a child-like curiosity and a desire to continously
-                learn new technologies.
+                I'm a passionate and skilled self-taught engineer with a strong
+                focus on JavaScript and with a love for creating exceptional web
+                applications. My journey into the world of software development
+                has been fueled by a child-like curiosity and a desire to
+                continously learn new technologies.
               </p>
               <button onClick={() => console.log("connect")}>
                 Let’s Connect <ArrowRightCircle size={25} />

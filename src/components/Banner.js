@@ -47,7 +47,7 @@ const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline"> Welcome to my Portfolio</span>
+            <span className="tagline"> Welcome to my Profile</span>
             <h1>
               {`👋 Hey there, I'm Ayo a `}
               <span className="wrap" id="fse">
@@ -55,14 +55,15 @@ const Banner = () => {
               </span>
               <h3></h3>
               <p>
-                I'm a passionate and skilled self-taught engineer with a strong
-                focus on JavaScript and with a love for creating exceptional web
-                applications. My journey into the world of software development
-                has been fueled by a child-like curiosity and a desire to
-                continously learn new technologies.
+                I'm a passionate and skilled self-taught Full-Stack Engineer
+                with a strong focus on JavaScript and with a love for creating
+                exceptional web applications. My journey into the world of
+                software development has been fueled by curiosity and a desire
+                to continously learn new technologies, and I am currently open
+                to new opportunities.
               </p>
               <button onClick={() => console.log("connect")}>
-                Let’s Connect <ArrowRightCircle size={25} />
+                🙋🏾‍♂️ Let’s Connect! <ArrowRightCircle size={25} />
               </button>
             </h1>
           </Col>

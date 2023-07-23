@@ -2,9 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Built using:
 
-In the project directory, you can run:
+- Front-end library: React
+- CSS framework: React-bootstrap
+- CSS animations library: Animate.css
+
+In the /personal-portfolio, you can run:
 
 ### `npm start`
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import meter1 from "../assets/images/meter1.svg";
@@ -40,12 +40,19 @@ const Skills = () => {
               {/* Work on how skills are displayed. Not as a slider but something that it always there.  */}
               {/* Also try to have techstack as a clicable popup or just displayed permanently  */}
               <h2>Skills</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                illo iusto odio tempora id unde reprehenderit laboriosam
-                deserunt. Minima beatae quo asperiores iure optio eum fuga
-                repellat quaerat quam molestias!
-              </p>
+
+              {/* <ListGroup className="skill-slider" as="ul">
+                <ListGroup.Item className="item" as="li">
+                  <div className="item">
+                    <img src={meter1} />
+                    Cras justo odio
+                  </div>
+                </ListGroup.Item>
+                <ListGroup.Item as="li">Dapibus ac facilisis in</ListGroup.Item>
+                <ListGroup.Item as="li">Morbi leo risus</ListGroup.Item>
+                <ListGroup.Item as="li">Porta ac consectetur ac</ListGroup.Item>
+              </ListGroup> */}
+
               <Carousel
                 responsive={responsive}
                 infinite={true}

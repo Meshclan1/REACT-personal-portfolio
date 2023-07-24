@@ -47,6 +47,19 @@ const NavBar = () => {
             >
               Home
             </Nav.Link>
+
+            <Nav.Link
+              href="#TECHSTACK"
+              className={
+                activeLink === "TECHSTACK"
+                  ? "active navbar-link"
+                  : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("TECHSTACK")}
+            >
+              TECHSTACK
+            </Nav.Link>
+
             <Nav.Link
               href="#skills"
               className={
@@ -56,6 +69,7 @@ const NavBar = () => {
             >
               Skills
             </Nav.Link>
+
             <Nav.Link
               href="#projects"
               className={
@@ -68,14 +82,14 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="" />
+              <a href="https://www.linkedin.com/in/ayomeshe/">
+                <img src={navIcon1} alt="LinkedIn Link" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="" />
+              <a href="https://github.com/Meshclan1">
+                <img src={navIcon2} alt="GitHub Link" />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="" />
+              <a href="https://medium.com/@ayo.meshe">
+                <img src={navIcon3} alt="Medium Link" />
               </a>
             </div>
             <button className="vvd">

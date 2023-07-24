@@ -8,6 +8,7 @@ import Banner from "./components/Banner";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <NavBar />
       <Banner />
       <Skills />
+      <Projects />
       <Contact />
       <Footer />
     </div>

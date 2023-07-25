@@ -34,8 +34,8 @@ const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Code for my completed projects below plus several more can be
-              found on my GitHub - see you there! 👨🏾‍💻
+              Code for my completed projects can be found on my GitHub - see you
+              there! 👨🏾‍💻
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav

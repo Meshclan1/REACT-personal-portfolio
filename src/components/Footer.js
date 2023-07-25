@@ -24,7 +24,10 @@ const Footer = () => {
                 <img src={navIcon3} />
               </a>
             </div>
-            <p>All Rights Reserved ® Copyright © 2023 Ayo Meshe.</p>
+            <p>
+              Free Icons by Icon Mafia - All Rights Reserved ® Copyright © 2023
+              Ayo Meshe.
+            </p>
           </Col>
         </Row>
       </Container>

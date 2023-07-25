@@ -250,6 +250,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
+/* 
+.tech-stack {
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  color: red;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+} */
+
+.rounded-container {
+  border-radius: 20px;
+  background-color: white; /* Grey background color */
+  padding: 20px;
+  margin: 25px;
+  border: 0.5px solid purple;
+}
+
+.rounded-container p {
+  border-top: 1px solid black;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
+  color: red;
+}
 
 /************ Banner Css ************/
 .banner {

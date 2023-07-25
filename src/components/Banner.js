@@ -4,44 +4,6 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/images/header-img.svg";
 
 const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Full-Stack Engineer"];
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(500);
-    }
-  };
-
   return (
     <section className="banner" id="home">
       <Container>
@@ -56,10 +18,10 @@ const Banner = () => {
               <h3></h3>
               <p>
                 A passionate and skilled self-taught Full-Stack Engineer with a
-                strong focus on JavaScript and with a love for creating
-                exceptional web applications. My journey into the world of
-                software development has been fueled by curiosity and a desire
-                to continously learn new technologies. Currently open to new
+                strong focus on JavaScript and a love for creating exceptional
+                web applications. My journey into the world of software
+                development has been fueled by curiosity and a desire to
+                continously learn new technologies. Currently open to new
                 opportunities!
               </p>
               <button onClick={() => console.log("connect")}>

@@ -17,12 +17,11 @@ const Banner = () => {
               </span>
               <h3></h3>
               <p>
-                A passionate and skilled self-taught Full-Stack Engineer with a
-                strong focus on JavaScript and a love for creating exceptional
-                web applications. My journey into the world of software
-                development has been fueled by curiosity and a desire to
-                continously learn new technologies. Currently open to new
-                opportunities!
+                A skilled self-taught Full-Stack Engineer with a strong focus on
+                JavaScript and with a love for creating exceptional web
+                applications. My journey has been fueled by curiosity and a
+                desire to continously learn new technologies. Always open to new
+                opportunities and fun collabs!
               </p>
               <button onClick={() => console.log("connect")}>
                 🙋🏾‍♂️ Let’s Connect <ArrowRightCircle size={25} />

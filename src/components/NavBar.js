@@ -44,6 +44,27 @@ const NavBar = () => {
     }
   };
 
+  const techStackIcons = [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Nodejs",
+    "Express",
+    "GIT",
+    "GitHub",
+    "NPM",
+    "MongoDB",
+    "Postman",
+    "Reactjs",
+    "Redux",
+    "Nextjs",
+    "Firebase",
+    "mySQL",
+    "Tailwind",
+    "Typescript",
+  ];
+
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
@@ -82,64 +103,31 @@ const NavBar = () => {
               aria-labelledby="contained-modal-title-vcenter"
               centered
             >
+              {" "}
               <Modal.Header closeButton>
-                <Modal.Title className="red">TECHSTACK</Modal.Title>
+                <Modal.Title></Modal.Title>
               </Modal.Header>
               <Modal.Body>
                 <Container fluid>
                   <Row>
-                    <Col className="d-flex flex-wrap">
-                      <div className="rounded-container">
-                        <div>
-                          <Icons
-                            name="JavaScript"
-                            width={75}
-                            height={75}
-                          ></Icons>
+                    <Col
+                      className="d-flex flex-wrap
+                      align-content-center justify-content-between"
+                    >
+                      {techStackIcons.map((icon) => (
+                        <div key={icon} className="rounded-container">
+                          <div>
+                            <Icons name={icon} width={75} height={75} />
+                          </div>
+                          <div>
+                            <p className="center">{icon}</p>
+                          </div>
                         </div>
-
-                        <div>
-                          <p class="center">JavaScript</p>
-                        </div>
-                      </div>
-
-                      <div className="rounded-container">
-                        <div>
-                          <Icons
-                            name="JavaScript"
-                            width={75}
-                            height={75}
-                          ></Icons>
-                        </div>
-                        <div>
-                          <p class="center">JavaScript</p>
-                        </div>
-                      </div>
-
-                      <div className="rounded-container">
-                        <div>
-                          <Icons
-                            name="JavaScript"
-                            width={75}
-                            height={75}
-                          ></Icons>
-                        </div>
-                        <div>
-                          <p class="center">JavaScript</p>
-                        </div>
-                      </div>
+                      ))}
                     </Col>
                   </Row>
                 </Container>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                  dignissimos pariatur cupiditate minus. Est eos, veniam
-                  reiciendis, tenetur illum aliquam eveniet at fugiat
-                  perspiciatis iusto placeat officiis iste, eum voluptas?
-                </p>
               </Modal.Body>
-
               <Modal.Footer>
                 <Button variant="secondary" onClick={() => setShowModal(false)}>
                   Close

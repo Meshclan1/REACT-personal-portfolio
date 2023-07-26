@@ -260,12 +260,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 } */
 
+div.tech.modal-title.h4 {
+  color: #ff0000; /* Red color */
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Set the font weight to bold */
+  text-align: center; /* Center the text */
+  margin-left: 40px;
+}
+
+div.modal-content {
+  background-color: #ffffff;
+
+  background-image: url("./assets/images/banner-bg.png");
+}
 .rounded-container {
   border-radius: 20px;
   background-color: white; /* Grey background color */
-  padding: 20px;
-  margin: 25px;
-  border: 0.5px solid purple;
+  padding: 20px 20px 10px 20px;
+  margin: 20px 30px 13px 30px;
+  border: 5px solid purple;
 }
 
 .rounded-container p {
@@ -274,8 +287,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-top: 10px;
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Medium.ttf");
-  font-weight: 500;
-  color: red;
+  font-weight: 650;
+  color: rgb(221, 17, 51);
+  text-align: center;
 }
 
 /************ Banner Css ************/
@@ -367,13 +381,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h2 {
   font-size: 45px;
   font-weight: 700;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .skill p {
   color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px 0 75px 0;
+  margin: 14px 0 125px 0;
 }
 .skill-slider {
   width: 80%;
@@ -390,6 +406,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+.align-content-center.col {
+  margin: 5px;
+  padding: 5px;
+}
+
+/* .list-group {
+  border: 1.5px solid purple;
+} */
+
+.list-group-item {
+  background: linear-gradient(
+    90.21deg,
+    #aa367c -5.91%,
+    #4a2fbd 111.58%
+  ) !important;
+  transition: background-color 0.3s ease;
+}
+.list-group-item:hover {
+  transform: scale(1.05); /* Add a scale transform on hover */
+}
+
+.list-group-item.list-group-item-action {
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  line-height: 1.5em;
+  font-weight: 450;
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Medium.ttf");
+}
+
+.list-group-item.list-group-item-action:hover {
+  color: rgb(251, 138, 96);
 }
 
 /************ Projects Css ************/

@@ -8,7 +8,7 @@ import {
   Modal,
   Button,
 } from "react-bootstrap";
-import logo from "../assets/images/logo.svg";
+import logoC from "../assets/images/LogoC.png";
 import navIcon1 from "../assets/images/nav-icon1.svg";
 import navIcon2 from "../assets/images/nav-icon2.svg";
 import navIcon3 from "../assets/images/nav-icon3.svg";
@@ -63,13 +63,14 @@ const NavBar = () => {
     "mySQL",
     "Tailwind",
     "Typescript",
+    "Figma",
   ];
 
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" />
+          <img src={logoC} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"> </span>

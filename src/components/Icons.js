@@ -293,6 +293,27 @@ const iconPaths = {
 <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,172,193); fill-rule: nonzero; opacity: 1;" transform=" translate(-24, -24)" d="M 24 9.604 C 17.6 9.604 13.6 12.802999999999999 12 19.201 C 14.4 16.002000000000002 17.2 14.803 20.4 15.602 C 22.226 16.058 23.531 17.383 24.976 18.849 C 27.328 21.236 30.051 24 36 24 C 42.4 24 46.4 20.801000000000002 48 14.402 C 45.6 17.601 42.8 18.801 39.6 18.002 C 37.775 17.546 36.47 16.221 35.025 14.754999999999999 C 32.672 12.367 29.948 9.604 24 9.604 L 24 9.604 z M 12 24 C 5.6 24 1.5999999999999996 27.198999999999998 0 33.598 C 2.4 30.399 5.2 29.198999999999998 8.4 29.999 C 10.225 30.456 11.530000000000001 31.779999999999998 12.975000000000001 33.245 C 15.328000000000001 35.632999999999996 18.052 38.397 24 38.397 C 30.4 38.397 34.4 35.198 36 28.799 C 33.6 31.997999999999998 30.8 33.198 27.6 32.397999999999996 C 25.774 31.941999999999997 24.469 30.616999999999997 23.024 29.151999999999997 C 20.672 26.764 17.949 24 12 24 L 12 24 z" stroke-linecap="round" />
 </g>
 </svg>`,
+  Figma: `<svg id='Figma_32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='32' height='32' stroke='none' fill='#000000' opacity='0'/>
+<g transform="matrix(0.58 0 0 0.58 16 16)" >
+<g style="" >
+<g transform="matrix(1 0 0 1 -5.5 -14)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(230,74,25); fill-rule: nonzero; opacity: 1;" transform=" translate(-18.5, -10)" d="M 26 17 L 18 17 C 14.134 17 11 13.866 11 10 L 11 10 C 11 6.134 14.134 3 18 3 L 26 3 L 26 17 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 -6 0)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(124,77,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-18, -24)" d="M 25 31 L 18 31 C 14.134 31 11 27.866 11 24 L 11 24 C 11 20.134 14.134 17 18 17 L 25 17 L 25 31 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 -6 14)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(102,187,106); fill-rule: nonzero; opacity: 1;" transform=" translate(-18, -38)" d="M 18 45 L 18 45 C 14.134 45 11 41.866 11 38 L 11 38 C 11 34.134 14.134 31 18 31 L 25 31 L 25 38 C 25 41.866 21.866 45 18 45 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 8 -14)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,112,67); fill-rule: nonzero; opacity: 1;" transform=" translate(-32, -10)" d="M 32 17 L 25 17 L 25 3 L 32 3 C 35.866 3 39 6.134 39 10 L 39 10 C 39 13.866 35.866 17 32 17 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 8 0)" >
+<circle style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(41,182,246); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="7" />
+</g>
+</g>
+</g>
+</svg>`,
 };
 
 const Icons = ({ name, width, height, ...rest }) => {

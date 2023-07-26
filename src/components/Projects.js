@@ -1,6 +1,6 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import projImg1 from "../assets/images/project-img1.png";
+import YelpCamp from "../assets/images/YelpCamp.png";
 import projImg2 from "../assets/images/project-img2.png";
 import projImg3 from "../assets/images/project-img3.png";
 import colorSharp2 from "../assets/images/color-sharp2.png";
@@ -10,8 +10,7 @@ const Projects = () => {
     {
       title: "YelpCamp",
       description: "An Interactive Campground",
-      imgUrl: projImg1,
-      // screenshot images on project landing page and use project img url
+      imgUrl: YelpCamp,
     },
     {
       title: "Bon Voyage",

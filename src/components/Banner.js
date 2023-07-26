@@ -20,8 +20,8 @@ const Banner = () => {
                 A skilled self-taught Full-Stack Engineer with a strong focus on
                 JavaScript and with a love for creating exceptional web
                 applications. My journey has been fueled by curiosity and a
-                desire to continously learn new technologies. Always open to new
-                opportunities and fun collabs!
+                desire to continously learn new technologies. Always open for
+                fun collabs and new opportunities!
               </p>
               <button onClick={() => console.log("connect")}>
                 🙋🏾‍♂️ Let’s Connect <ArrowRightCircle size={25} />

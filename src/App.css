@@ -102,6 +102,10 @@ p.danger {
 }
 
 /************ Navbar Css ************/
+a.navbar-brand img {
+  width: 45px;
+}
+
 nav.navbar {
   padding: px 0;
   position: fixed;
@@ -719,4 +723,9 @@ div.modal-content {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.logos.col-sm-6 img {
+  width: 45px;
+  margin: 10px;
 }

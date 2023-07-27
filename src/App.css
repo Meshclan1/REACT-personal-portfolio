@@ -254,21 +254,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
-/* 
-.tech-stack {
-  margin-top: 10px;
-  margin-bottom: 1rem;
-  color: red;
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-} */
 
 div.tech.modal-title.h4 {
-  color: #ff0000; /* Red color */
-  font-size: 24px; /* Adjust the font size */
-  font-weight: bold; /* Set the font weight to bold */
-  text-align: center; /* Center the text */
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
   margin-left: 40px;
 }
 
@@ -333,6 +324,7 @@ div.modal-content {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  margin-top: 20px;
 }
 .banner button {
   color: #fff;

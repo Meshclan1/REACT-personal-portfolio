@@ -14,14 +14,14 @@ const Footer = () => {
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="">
-                <img src={navIcon1} />
+              <a href="#">
+                <img src={navIcon1} alt="navicon" />
               </a>
-              <a href="">
-                <img src={navIcon2} />
+              <a href="#">
+                <img src={navIcon2} alt="navicon" />
               </a>
-              <a href="">
-                <img src={navIcon3} />
+              <a href="#">
+                <img src={navIcon3} alt="navicon" />
               </a>
             </div>
             <p>All Rights Reserved ® Copyright © 2023 Ayo Meshe.</p>

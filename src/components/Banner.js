@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/images/header-img.svg";
@@ -13,15 +13,14 @@ const Banner = () => {
             <h1>
               {`I'm Ayo a `}
               <span className="wrap" id="fse">
-                Full-Stack Engineer 👋
+                Full-Stack Engineer 👋🇬🇧
               </span>
-              <h3></h3>
               <p>
                 A skilled self-taught Full-Stack Engineer with a strong focus on
                 JavaScript and with a love for creating exceptional web
                 applications. My journey has been fueled by curiosity and a
-                desire to continously learn new technologies. Always open for
-                fun collabs and new opportunities!
+                desire to continously learn new technologies. Always open to fun
+                collabs and new opportunities!
               </p>
               <button onClick={() => console.log("connect")}>
                 🙋🏾‍♂️ Let’s Connect <ArrowRightCircle size={25} />

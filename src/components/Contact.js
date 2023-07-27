@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/images/contact-img.svg";
-import { Textarea } from "react-bootstrap-icons";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formInitialDetails = {
@@ -23,31 +23,33 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const form = useRef();
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    emailjs
+      .sendForm(
+        "service_g722m5q",
+        "template_mh7fj9l",
+        form.current,
+        "vmOSJyou4xkZiKeJV"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Message sent succesfully!");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     setButtonText("Send");
-    let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        succes: false,
-        message: "Something went wrong, please try again later.",
-      });
-    }
   };
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
@@ -55,13 +57,15 @@ const Contact = () => {
           </Col>
           <Col size={12} md={6}>
             <h2>Get in Touch</h2>
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
               <Row>
                 <Col size={12} sm={6} className="px-1">
                   <input
                     type="text"
                     value={formDetails.firstName}
-                    placeholder="First Name:"
+                    placeholder="First Name"
+                    required
+                    name="firstName"
                     onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   ></input>
                 </Col>
@@ -69,7 +73,9 @@ const Contact = () => {
                   <input
                     type="text"
                     value={formDetails.lastName}
-                    placeholder="Last Name:"
+                    placeholder="Last Name"
+                    required
+                    name="lastName"
                     onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   ></input>
                 </Col>
@@ -77,7 +83,9 @@ const Contact = () => {
                   <input
                     type="email"
                     value={formDetails.email}
-                    placeholder="Email:"
+                    placeholder="Email"
+                    required
+                    name="email"
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   ></input>
                 </Col>
@@ -85,7 +93,8 @@ const Contact = () => {
                   <input
                     type="tel"
                     value={formDetails.phone}
-                    placeholder="Phone No.:"
+                    placeholder="Phone No. (optional)"
+                    name="phone"
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   ></input>
                 </Col>
@@ -96,9 +105,10 @@ const Contact = () => {
                     rows="6"
                     value={formDetails.message}
                     placeholder="Message (300-words Max):"
+                    required
+                    name="message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   ></textarea>
-
                   <button type="submit">
                     <span>{buttonText}</span>
                   </button>
@@ -107,7 +117,7 @@ const Contact = () => {
                   <Col>
                     <p
                       className={
-                        (status.success = false ? "danger" : "success")
+                        status.success === false ? "danger" : "success"
                       }
                     >
                       {status.message}

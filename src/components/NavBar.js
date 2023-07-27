@@ -135,7 +135,6 @@ const NavBar = () => {
                 </Button>
               </Modal.Footer>
             </Modal>
-
             <Nav.Link
               href="#skills"
               className={
@@ -145,7 +144,6 @@ const NavBar = () => {
             >
               Skills
             </Nav.Link>
-
             <Nav.Link
               href="#projects"
               className={
@@ -168,7 +166,13 @@ const NavBar = () => {
                 <img src={navIcon3} alt="Medium Link" />
               </a>
             </div>
-            <button className="vvd">
+            <button
+              className="vvd"
+              onClick={() => {
+                const contactSection = document.getElementById("contact");
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               <span>Get in Touch</span>
             </button>
           </span>
@@ -177,5 +181,4 @@ const NavBar = () => {
     </Navbar>
   );
 };
-
 export default NavBar;

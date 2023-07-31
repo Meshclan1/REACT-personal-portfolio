@@ -20,7 +20,7 @@ const Banner = () => {
                 JavaScript and with a love for creating exceptional web
                 applications. My journey has been fueled by curiosity and a
                 desire to continously learn new technologies. Always open to fun
-                collabs and new opportunities!
+                collaborations and new opportunities!
               </p>
               <button onClick={() => console.log("connect")}>
                 🙋🏾‍♂️ Let’s Connect <ArrowRightCircle size={25} />

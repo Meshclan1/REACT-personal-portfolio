@@ -97,7 +97,7 @@ const Contact = () => {
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   ></input>
                 </Col>
-                <Col size={12} sm={6} className="px-1">
+                <Col size={5} sm={12} className="px-1">
                   <textarea
                     maxLength="300"
                     spellCheck="false"

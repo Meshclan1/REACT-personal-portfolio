@@ -29,10 +29,10 @@ const Contact = () => {
     setButtonText("Sending...");
     emailjs
       .sendForm(
-        "service_g722m5q",
-        "template_mh7fj9l",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "vmOSJyou4xkZiKeJV"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {

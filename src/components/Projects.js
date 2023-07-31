@@ -33,7 +33,7 @@ const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Check out my project codes on{" "}
+              Please check out more of my built projects on{" "}
               <a href="https://github.com/Meshclan1">GitHub</a> - see you there!
               👨🏾‍💻
             </p>

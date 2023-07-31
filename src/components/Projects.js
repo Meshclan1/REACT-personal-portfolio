@@ -33,14 +33,14 @@ const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Check out the code for my completed projects on my{" "}
+              Check out my project codes on{" "}
               <a href="https://github.com/Meshclan1">GitHub</a> - see you there!
               👨🏾‍💻
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
+                className="nav-pills mb-3 justify-content-center align-items-center"
                 id="pills-tab"
               >
                 <Nav.Item>
@@ -58,13 +58,16 @@ const Projects = () => {
 
               <Tab.Content>
                 <Tab.Pane eventKey="first">
-                  <p>
-                    A scalable full-stack web application hosted on Render
-                    leveraging MongoDB as the default database storage system.
-                    In this project I use Embedded JavaScript (EJS) and
-                    BootStrap for designing the User-Interface (UI), and Node.js
-                    and Express.js for managing the backend server components.
-                  </p>
+                  <Row className="mb-2 justify-content-center align-items-center">
+                    <p>
+                      A scalable full-stack web application hosted on Render
+                      leveraging MongoDB as the default database storage system.
+                      In this project I use Embedded JavaScript (EJS) and
+                      BootStrap for designing the User-Interface (UI), and
+                      Node.js and Express.js for managing the backend server
+                      components.
+                    </p>
+                  </Row>
                   <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects
                       .filter((project) => project.title === "YelpCamp")

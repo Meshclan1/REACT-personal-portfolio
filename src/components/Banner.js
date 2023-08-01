@@ -22,7 +22,12 @@ const Banner = () => {
                 desire to continously learn new technologies. Always open to fun
                 collaborations and new opportunities!
               </p>
-              <button onClick={() => console.log("connect")}>
+              <button
+                onClick={() => {
+                  const contactSection = document.getElementById("contact");
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 🙋🏾‍♂️ Let’s Connect <ArrowRightCircle size={25} />
               </button>
             </h1>

@@ -60,13 +60,10 @@ const Projects = () => {
                 <Tab.Pane eventKey="first">
                   <Row className="mb-2 justify-content-center align-items-center">
                     <p>
-                      A scalable full-stack web application hosted on Render
-                      leveraging MongoDB as the default database storage system.
-                      In this project I use Embedded JavaScript (EJS) and
-                      BootStrap for designing the User-Interface (UI), and
-                      Node.js and Express.js for managing the backend server
-                      components.
+Successfully implemented and deployed an interactive campground application that enables users to register, share, and explore their individual campground experiences
                     </p>
+                        <br/>
+                        <p>Tech Stack: EJS, Node.js, Express.js, MongoDB, Mongoose, Passport.js, Cloudinary, Mapbox SDK, Model-View-Controller (MVC) Framework, Render Web Hosting <p/>
                   </Row>
                   <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects
@@ -90,8 +87,10 @@ const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                  <p>A a rating app that features authentication, real-time fetching of popular movies and TV shows from the TMDB API, and a personalized rating functionality to enhance user experience</p>
-                  <Row className="nav-pills mb-5 justify-content-center align-items-center">
+                  <p>A rating app that features authentication, real-time fetching of popular movies and TV shows from the TMDB API, and a personalized rating functionality to enhance user experience</p>
+                  <br/>
+                    <p> Tech Stack: Vite, React, TypeScript, Tanstack, Semantic UI, React-Router-Dom, TMBD API, Vercel <p/>
+                    <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects
                       .filter((project) => project.title === "Movie/TV Show Rating App")
                       .map((project, index) => (

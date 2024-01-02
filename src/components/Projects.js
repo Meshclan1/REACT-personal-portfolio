@@ -79,6 +79,7 @@ const Projects = () => {
 
                 <Tab.Pane eventKey="second">
                   <p>An interactive web application that fosters collaboration and knowledge-sharing within the geo-tech engineering community. It features user-friendly content creation and added search functionality that is tailored to the needs of industry professionals and wider enthusiasts.</p>
+                    <br/>
                     <p> Tech Stack: Next.js, React, TypeScript, Tailwind CSS, NextAuth.js, Prisma, PostgreSQL database hosted on Railway, Vercel Cloud Deployment</p> 
                   <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects

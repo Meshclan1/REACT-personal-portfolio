@@ -78,20 +78,20 @@ const Projects = () => {
                 </Tab.Pane>
 
                 <Tab.Pane eventKey="second">
-                  <p>Lorem Ipsum</p>
+                  <p>An interactive web application that fosters collaboration and knowledge-sharing within the geo-tech engineering community. It features user-friendly content creation and added search functionality that is tailored to the needs of industry professionals and wider enthusiasts. Tech Stack: Next.js, React, TypeScript, Tailwind CSS, NextAuth.js, Prisma, PostgreSQL database hosted on Railway, Vercel Cloud Deployment</p>
                   <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects
-                      .filter((project) => project.title === "Bon Voyage")
+                      .filter((project) => project.title === "Geo-Tech Blog App")
                       .map((project, index) => (
                         <ProjectCard key={index} {...project} />
                       ))}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                  <p>Lorem Ipsum</p>
+                  <p>A a rating app that features authentication, real-time fetching of popular movies and TV shows from the TMDB API, and a personalized rating functionality to enhance user experience</p>
                   <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects
-                      .filter((project) => project.title === "dump")
+                      .filter((project) => project.title === "Movie/TV Show Rating App")
                       .map((project, index) => (
                         <ProjectCard key={index} {...project} />
                       ))}

@@ -13,14 +13,14 @@ const Projects = () => {
       imgUrl: YelpCamp,
     },
     {
-      title: "Bon Voyage",
-      description: "Your Personal Travel Journal",
+      title: "Geo-Tech Blog App",
+      description: "Latest industry news",
       imgUrl: projImg2,
       // screenshot images on project landing page and use project img url
     },
     {
-      title: "dump",
-      description: "Design & Development",
+      title: "Movie/TV Show Rating App",
+      description: "Rate your show!",
       imgUrl: projImg3,
       // screenshot images on project landing page and use project img url
     },

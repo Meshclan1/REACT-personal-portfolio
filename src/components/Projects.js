@@ -58,7 +58,7 @@ const Projects = () => {
                 <Tab.Pane eventKey="first">
                   <p> Successfully implemented and deployed an interactive campground application that enables users to register, share, and explore their individual campground experiences</p>
                       <br/>
-                      <p>Tech Stack: EJS, Node.js, Express.js, MongoDB, Mongoose, Passport.js, Cloudinary, Mapbox SDK, Model-View-Controller (MVC) Framework, Render Web Hosting <p/>
+                      <p>Tech Stack: EJS, Node.js, Express.js, MongoDB, Mongoose, Passport.js, Cloudinary, Mapbox SDK, Model-View-Controller (MVC) Framework, Render Web Hosting </p>
                   <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects
                       .filter((project) => project.title === "YelpCamp")
@@ -82,7 +82,7 @@ const Projects = () => {
                 <Tab.Pane eventKey="third">
                   <p>A rating app that features authentication, real-time fetching of popular movies and TV shows from the TMDB API, and a personalized rating functionality to enhance user experience</p>
                     <br/>
-                    <p> Tech Stack: Vite, React, TypeScript, Tanstack, Semantic UI, React-Router-Dom, TMBD API, Vercel <p/>
+                    <p> Tech Stack: Vite, React, TypeScript, Tanstack, Semantic UI, React-Router-Dom, TMBD API, Vercel </p>
                   <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects
                       .filter((project) => project.title === "Movie/TV Show Rating App")

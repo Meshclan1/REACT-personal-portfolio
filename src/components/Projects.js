@@ -31,7 +31,7 @@ const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Check out more of my pinned projects on
+              Check out more of my pinned projects on {""}
               <a href="https://github.com/Meshclan1">GitHub</a> - see you there!
               👨🏾‍💻
             </p>

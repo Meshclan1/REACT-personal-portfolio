@@ -1,8 +1,8 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import YelpCamp from "../assets/images/YelpCamp.png";
-import projImg2 from "../assets/images/project-img2.png";
-import projImg3 from "../assets/images/project-img3.png";
+import GeotechBlogApp from "../assets/images/GeotechBlogApp.png";
+import MovieRatingApp from "../assets/images/MovieRatingApp.png";
 import colorSharp2 from "../assets/images/color-sharp2.png";
 
 const Projects = () => {
@@ -15,13 +15,13 @@ const Projects = () => {
     {
       title: "Geo-Tech Blog App",
       description: "Latest industry news",
-      imgUrl: projImg2,
+      imgUrl: GeotechBlogApp,
       // screenshot images on project landing page and use project img url
     },
     {
       title: "Movie/TV Show Rating App",
       description: "Rate your show!",
-      imgUrl: projImg3,
+      imgUrl: MovieRatingApp,
       // screenshot images on project landing page and use project img url
     },
   ];

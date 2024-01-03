@@ -16,13 +16,11 @@ const Projects = () => {
       title: "Geo-Tech Blog App",
       description: "Latest industry news",
       imgUrl: GeotechBlogApp,
-      // screenshot images on project landing page and use project img url
     },
     {
       title: "Movie/TV Show Rating App",
       description: "Rate your show!",
       imgUrl: MovieRatingApp,
-      // screenshot images on project landing page and use project img url
     },
   ];
 
@@ -33,7 +31,7 @@ const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Please check out more of my built projects on{" "}
+              Check out more of my pinned projects on
               <a href="https://github.com/Meshclan1">GitHub</a> - see you there!
               👨🏾‍💻
             </p>
@@ -58,13 +56,9 @@ const Projects = () => {
 
               <Tab.Content>
                 <Tab.Pane eventKey="first">
-                  <Row className="mb-2 justify-content-center align-items-center">
-                    <p>
-Successfully implemented and deployed an interactive campground application that enables users to register, share, and explore their individual campground experiences
-                    </p>
-                        <br/>
-                        <p>Tech Stack: EJS, Node.js, Express.js, MongoDB, Mongoose, Passport.js, Cloudinary, Mapbox SDK, Model-View-Controller (MVC) Framework, Render Web Hosting <p/>
-                  </Row>
+                  <p> Successfully implemented and deployed an interactive campground application that enables users to register, share, and explore their individual campground experiences</p>
+                      <br/>
+                      <p>Tech Stack: EJS, Node.js, Express.js, MongoDB, Mongoose, Passport.js, Cloudinary, Mapbox SDK, Model-View-Controller (MVC) Framework, Render Web Hosting <p/>
                   <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects
                       .filter((project) => project.title === "YelpCamp")
@@ -73,7 +67,6 @@ Successfully implemented and deployed an interactive campground application that
                       ))}
                   </Row>
                 </Tab.Pane>
-
                 <Tab.Pane eventKey="second">
                   <p>An interactive web application that fosters collaboration and knowledge-sharing within the geo-tech engineering community. It features user-friendly content creation and added search functionality that is tailored to the needs of industry professionals and wider enthusiasts.</p>
                     <br/>
@@ -88,9 +81,9 @@ Successfully implemented and deployed an interactive campground application that
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   <p>A rating app that features authentication, real-time fetching of popular movies and TV shows from the TMDB API, and a personalized rating functionality to enhance user experience</p>
-                  <br/>
+                    <br/>
                     <p> Tech Stack: Vite, React, TypeScript, Tanstack, Semantic UI, React-Router-Dom, TMBD API, Vercel <p/>
-                    <Row className="nav-pills mb-5 justify-content-center align-items-center">
+                  <Row className="nav-pills mb-5 justify-content-center align-items-center">
                     {projects
                       .filter((project) => project.title === "Movie/TV Show Rating App")
                       .map((project, index) => (
@@ -106,7 +99,7 @@ Successfully implemented and deployed an interactive campground application that
       <img
         className="background-image-right"
         src={colorSharp2}
-        alt="background-imagess"
+        alt="background-images"
       ></img>
     </section>
   );

@@ -24,7 +24,7 @@ const Footer = () => {
                 <img src={navIcon3} alt="navicon" />
               </a>
             </div>
-            <p>All Rights Reserved ® Copyright © 2023 Ayo Meshe.</p>
+            <p>All Rights Reserved ® Copyright © 2024 Ayo Meshe.</p>
           </Col>
         </Row>
       </Container>
